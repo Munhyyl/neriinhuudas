@@ -49,24 +49,24 @@
     <p id="email">Email: munhyyl@gmail.com</p>
     <p id="phone">Phone: 94281918</p>
 
-    <form id="cardForm" action="https://csii203-at-num-2023autumn-w1.azurewebsites.net/api/endpoint1?code=0SU6dqRROd2ob5QkEyF_uLTQXibfoiqEjfcg01rpZINFAzFuSVuOtA==" method="GET">
+    <form id="cardForm" action="https://csii203-at-num-2023autumn-w1.azurewebsites.net/api/endpoint1?code=0SU6dqRROd2ob5QkEyF_uLTQXibfoiqEjfcg01rpZINFAzFuSVuOtA==" method="POST">
         <label for="logoInput">Logo URL:</label>
-        <input type="text" id="logoInput" placeholder="Enter logo URL">
+        <input type="text" id="logoInput" name="Logo" placeholder="Enter logo URL">
 
         <label for="nameInput">Name:</label>
-        <input type="text" id="nameInput" placeholder="Enter your name">
+        <input type="text" id="nameInput" name="name" placeholder="Enter your name">
 
         <label for="titleInput">Title:</label>
-        <input type="text" id="titleInput" placeholder="Enter your title">
+        <input type="text" id="titleInput" name="title" placeholder="Enter your title">
 
         <label for="emailInput">Email:</label>
-        <input type="email" id="emailInput" placeholder="Enter your email">
+        <input type="text" id="emailInput" name="email" placeholder="Enter your email">
 
         <label for="phoneInput">Phone:</label>
-        <input type="tel" id="phoneInput" placeholder="Enter your phone number">
-
-        <!-- <button type="button" onclick="updateCard()">Generate Card</button> -->
+        <input type="text" id="phoneInput" name="Phone" placeholder="Enter your phone number">
         <input type="submit" value="Submit">
+        <!-- <button type="button" onclick="updateCard()">Generate Card</button> -->
+        
     </form>
 </div>
 </body>
