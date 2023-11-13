@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            color: #666;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <img id="logo" src="https://sisi.num.edu.mn/files/main/logo_en_web.jpg">
+    <h2 id="name">Munkh-Orgil</h2>
+    <p id="title">student</p>
+    <p id="email">Email: munhyyl@gmail.com</p>
+    <p id="phone">Phone: 94281918</p>
+
+    <form id="cardForm" action="https://csii203-at-num-2023autumn-w1.azurewebsites.net/api/endpoint1?code=0SU6dqRROd2ob5QkEyF_uLTQXibfoiqEjfcg01rpZINFAzFuSVuOtA==" method="POST">
+        <label for="logoInput">Logo URL:</label>
+        <input type="text" id="logoInput" placeholder="Enter logo URL">
+
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+
+        <label for="titleInput">Title:</label>
+        <input type="text" id="titleInput" placeholder="Enter your title">
+
+        <label for="emailInput">Email:</label>
+        <input type="email" id="emailInput" placeholder="Enter your email">
+
+        <label for="phoneInput">Phone:</label>
+        <input type="tel" id="phoneInput" placeholder="Enter your phone number">
+
+        <!-- <button type="button" onclick="updateCard()">Generate Card</button> -->
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>
